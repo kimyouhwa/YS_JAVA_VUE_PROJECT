@@ -8,6 +8,7 @@
     <button @click="clickSon10">큰아들버튼</button>
     <button @click="clickSon20">큰아들버튼2</button>
     <button @click="clickSon30">큰아들버튼3</button>
+    {{gpapaMin}}
   </div>
 </template>
 
@@ -49,6 +50,7 @@ export default {
       sndMessage:'',
     };
   },
+  inject:['gpapaMin'],
   computed:{
     computedMsg(){
       if(this.$refs.gson11){

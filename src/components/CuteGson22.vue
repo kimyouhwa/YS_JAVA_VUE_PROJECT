@@ -2,6 +2,7 @@
   <div class="gson">
     <!-- 내용을 추가하세요 -->
     <p v-bind:style="{color:tcolor}" >작은집손자 2 : {{message}}</p>
+    {{gpapaLen}}
   </div>
 </template>
 
@@ -41,6 +42,7 @@ export default {
       message:'',
     };
   },
+  inject:['gpapaLen'],
   watch: {
     // sample1() {
     //   console.log('');
