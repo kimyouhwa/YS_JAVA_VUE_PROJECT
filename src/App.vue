@@ -14,6 +14,7 @@
     <router-link to="calculator4">9.계산기4</router-link>
     <router-link to="mixin">9.Mixin</router-link>
     <router-link to="user">11.vuex예제1</router-link>
+    <router-link to="member">11.vuex예제(회원목록)</router-link>
   </nav>
   <router-view/>
 </template>

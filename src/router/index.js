@@ -11,7 +11,8 @@ import CalculatorView3 from '../views/CalculatorView3.vue'
 import CalculatorView4 from '../views/CalculatorView4.vue'
 import MixView from '../views/MixView.vue'
 import UserView from '../views/UserView.vue'
- 
+import MemberView from '../views/MemberView.vue'
+
 const routes = [
   {
     path: '/',
@@ -80,7 +81,14 @@ const routes = [
     path: '/user',
     name: 'user',
     component: UserView
+  },
+  {
+    path: '/member',
+    name: 'member',
+    component: MemberView
   }
+
+  
 ]
 
 const router = createRouter({
