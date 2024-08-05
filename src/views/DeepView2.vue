@@ -3,7 +3,9 @@
     <br><br><br><br><br>
     <GoodSon10 ref="son10"/>
     <GoodSon20 ref="son20"/>
+    {{gpapaValues}}
     <input type="button" value="할아버지버튼1" @click="clickGpapa">
+
   </div>
 </template>
 
@@ -40,7 +42,14 @@ export default {
   data() {
     return {
       // 컴포넌트의 데이터를 초기화합니다.
+      gpapaValues : [10,2,3],
+      
     };
+  },
+  provide(){
+    return{ gpapaLen: this.gpapaValues.length ,
+    gpapaMin : Math.min(...this.gpapaValues)
+    }
   },
   watch: {
     // sample1() {

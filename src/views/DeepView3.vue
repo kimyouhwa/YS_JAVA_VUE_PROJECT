@@ -13,7 +13,7 @@
 import Sample01Pop from './Sample01Pop.vue';
 import Sample02Pop from './Sample02Pop.vue';
 export default {
-  name: 'TestView',
+  name: 'DeepView3',
   components:{
     Sample01Pop,Sample02Pop
   }
